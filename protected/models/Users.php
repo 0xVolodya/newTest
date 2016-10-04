@@ -34,6 +34,8 @@ class Users extends CActiveRecord
 				'message'=>"Пожалуйста введите {attribute}."),
 			array('username', 'validateUsername'),
 			array('email', 'validateEmail'),
+			array('email', 'email',
+				'message'=>"Почта введена неправильно"),
 			array('username, password', 'length', 'max'=>20),
 			array('email', 'length', 'max'=>225),
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(),
@@ -66,6 +68,7 @@ class Users extends CActiveRecord
 			array('email'=>$this->email))){
 			$this->addError('email','Пользователь с данной почтой существует');
 		}
+
 	}
 
 	/**

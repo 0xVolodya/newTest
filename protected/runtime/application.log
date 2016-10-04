@@ -1455,3 +1455,20 @@ Stack trace:
 REQUEST_URI=/newTest/index.php
 HTTP_REFERER=http://localhost/newTest/index.php/site/login
 ---
+2016/10/04 22:11:03 [error] [php] Undefined variable: app (C:\xampp\htdocs\medTest\protected\views\site\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\medTest\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.17.467ff50\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\medTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/medtest/index.php/site/index
+in C:\xampp\htdocs\medTest\protected\views\site\index.php (16)
+in C:\xampp\htdocs\medTest\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\medTest\index.php (13)

@@ -14,7 +14,7 @@ class UsersController extends Controller
         $mail = new JPhpMailer;
         $activation = md5(uniqid(rand(), true));
         $message_part1 = "Пожалуйста перейдите по ссылке для активации вашего аккаунта";
-        $message_part2 = "http://localhost/newTest/index.php/users/activate?" .
+        $message_part2 = "http://localhost".Yii::app()->baseUrl."/index.php/users/activate?" .
             'email=' . urlencode($email) .
             '&activation=' . $activation;
 //        http://localhost/newTest/index.php/users/activate?activation=3b002881924b0a77645ecc9fa6bda931&email=nadalfederer%40mail.ru

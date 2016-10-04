@@ -1,7 +1,7 @@
--- CREATE DATABASE yiireg;
+CREATE DATABASE yiireg;
 
 USE yiireg;
-DROP TABLE users;
+-- DROP TABLE users;
 
 CREATE TABLE users (
          id int(10) unsigned NOT NULL AUTO_INCREMENT,
